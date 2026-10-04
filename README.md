@@ -71,8 +71,8 @@ Excel roster ──► Email QR codes ──► Student approaches (<30 cm)
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/yasminemagdy/secure-qr-face-attendance.git
+cd secure-qr-face-attendance
 ```
 
 ### 2. Enable I2C
