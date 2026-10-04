@@ -15,8 +15,6 @@ Manual roll calls and paper sign-ins are slow, error-prone, and easy to cheat (s
 
 An ultrasonic sensor wakes the scanner only when someone is standing close, an LCD and two LEDs give instant feedback, and results are written straight back to an Excel sheet.
 
-Built for **CEN425** at Abu Dhabi University by Yasmin Magdy Loksha, Sama Alaa Mohamed and Shahd Ghazal, supervised by Eng. Gasm El Bary.
-
 ## Screenshots
 
 <!-- Replace the placeholders below with real photos / screenshots -->
