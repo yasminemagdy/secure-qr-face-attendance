@@ -1,0 +1,9 @@
+numpy
+opencv-python
+face_recognition
+pandas
+openpyxl
+qrcode[pil]
+pyzbar
+gpiozero
+smbus2

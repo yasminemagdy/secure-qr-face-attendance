@@ -1,0 +1,23 @@
+# Secrets & private data
+.env
+*.xlsx
+*.xls
+data/*
+!data/.gitkeep
+pics/*
+!pics/.gitkeep
+
+# Generated QR images
+QR_*.png
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+!students_template.xlsx
