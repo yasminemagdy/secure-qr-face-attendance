@@ -50,6 +50,12 @@ Excel roster ──► Email QR codes ──► Student approaches (<30 cm)
                   Green LED + mark "Attend" in Excel + show total on LCD
 ```
 
+### State machine
+
+![FSM diagram](docs/images/fsm-diagram.png)
+
+*The system idles until the ultrasonic sensor detects someone within 30 cm, then moves through QR scan → QR verification → face check → attendance recording. Invalid QR or face mismatch goes to an error state; the session closes when the attendance window ends.*
+
 ## Hardware Required
 
 | Component | Notes |
@@ -63,7 +69,20 @@ Excel roster ──► Email QR codes ──► Student approaches (<30 cm)
 | 2x ~1 kΩ resistors, breadboard, jumper wires | |
 
 > **Tip:** the HC-SR04 echo pin outputs 5 V. Use a voltage divider (e.g. 1 kΩ + 2 kΩ) on the echo line to protect the Pi's 3.3 V GPIO.
+### Wiring
 
+![Wiring schematic](docs/images/wiring-schematic.png)
+
+| Component | Pin |
+|---|---|
+| Ultrasonic Trigger | GPIO 17 |
+| Ultrasonic Echo | GPIO 18 (through a voltage divider) |
+| Green LED (+ resistor) | GPIO 27 |
+| Red LED (+ resistor) | GPIO 23 |
+| LCD SDA | GPIO 2 |
+| LCD SCL | GPIO 3 |
+| LCD / sensor power | 5 V and GND |
+| Webcam | any USB port |
 ## Installation
 
 ### 1. Clone the repository
